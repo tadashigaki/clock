@@ -5,5 +5,8 @@ api_version: 1
 threadsafe: false
 
 handlers:
+- url: /prefs
+  script: prefs.py
+  login: required
 - url: /.*
   script: main.py
